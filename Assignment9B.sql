@@ -1,10 +1,4 @@
-/*Tahmidul Haque
-Assignment #9
-November 9 2023
-Create a New DB using SQL for # 1 through #6
-*/
 
-/* Query for Question 1 */
 CREATE TABLE HAQUE_VEHICLE (
 		Owner_ID INT(7) NOT NULL,
 		Type VARCHAR(3) NOT NULL,
@@ -16,7 +10,7 @@ CREATE TABLE HAQUE_VEHICLE (
 
 DESCRIBE HAQUE_VEHICLE;
 
-/* Query for Question 2 */
+
 INSERT INTO HAQUE_VEHICLE (OWNER_ID, Type, MfgDate, Registration_Number, Manufacturer)
 VALUES
 ("1", "Civ", "11-01-01", "R1", "Honda"),
@@ -32,17 +26,14 @@ VALUES
 
 SELECT * FROM sakila.haque_vehicle;
 
- /* Query for Question #3 */
 select tahmidul_haque_owner.last_name, haque_vehicle.MfgDate, haque_vehicle.Type, haque_vehicle.Manufacturer
 from tahmidul_haque_owner
 JOIN haque_vehicle ON tahmidul_haque_owner.owner_ID = haque_vehicle.Owner_ID;
 
- /* Query for Question #4 */
 select haque_vehicle.Owner_ID, haque_vehicle.MfgDate
 from haque_vehicle
 ORDER BY Type;
 
- /* Query for Question #5 */
 select haque_vehicle.Type, haque_vehicle.MfgDate, haque_vehicle.Registration_Number, haque_vehicle.Manufacturer
 from haque_vehicle
 ORDER BY Manufacturer;
