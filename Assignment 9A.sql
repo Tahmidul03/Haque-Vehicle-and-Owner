@@ -1,11 +1,3 @@
-/*Tahmidul Haque
-Assignment #9
-November 9 2023
-Create a New DB using SQL for # 1 through #6
-*/
-
-
-/*Query for Question 1 */
 CREATE TABLE TAHMIDUL_HAQUE_OWNER (
 
 	owner_ID INT(7) PRIMARY KEY,
@@ -19,7 +11,7 @@ CREATE TABLE TAHMIDUL_HAQUE_OWNER (
 
 Describe TAHMIDUL_HAQUE_OWNER;
 
-/* Query for Question 2 */
+
 INSERT INTO TAHMIDUL_HAQUE_OWNER (owner_ID, first_name, last_name, street_address, City, State, Zip_Code)
 VALUES
 ("3729743", "tommy", "haque", "Ozone Village", "437 Bergen Road", "NY", "13838"),
